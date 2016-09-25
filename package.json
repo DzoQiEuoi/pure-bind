@@ -1,0 +1,35 @@
+{
+  "name": "pure-bind",
+  "version": "0.0.1",
+  "description": "Memoized function binding",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DzoQiEuoi/pure-bind.git"
+  },
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/chai": "^3.4.33",
+    "@types/mocha": "^2.2.32",
+    "mocha": "^3.0.2",
+    "ntypescript": "^1.201609060105.1",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3"
+  },
+  "scripts": {
+    "pretest": "npm run build",
+    "test": "node ./node_modules/mocha/bin/mocha test.js",
+    "build": "node ./node_modules/ntypescript/bin/tsc",
+    "lint": "node ./node_modules/tslint/bin/tslint *.ts",
+    "preversion": "npm run lint && npm run build && npm test"
+  },
+  "keywords": [
+    "react",
+    "jsx",
+    "bind",
+    "memoize",
+    "pure"
+  ],
+  "author": "DzoQiEuoi",
+  "license": "MIT"
+}
