@@ -7,6 +7,7 @@
     "url": "https://github.com/DzoQiEuoi/pure-bind.git"
   },
   "main": "index.js",
+  "types": "index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "@types/chai": "^3.4.33",
